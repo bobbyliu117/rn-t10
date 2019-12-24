@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View} from "react-native";
-import styles from "./styles";
+import styles from "../styles";
 import Icon from "react-native-vector-icons/AntDesign";
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import HomeA from './HomeA';

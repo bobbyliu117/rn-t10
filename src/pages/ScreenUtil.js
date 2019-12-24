@@ -1,14 +1,12 @@
 import React from 'react';
 import {Text, View} from "react-native";
 import styles from "./styles";
-import Icon from "react-native-vector-icons/AntDesign";
 
-const Page = () => {
+export const placeholderPage = name => () => {
 	return (
 		<View style={styles.container}>
-			<Text>HomeB</Text>
+			<Text style={{fontSize: 32}}>{name}</Text>
 		</View>
 	)
 };
 
-export default Page;
