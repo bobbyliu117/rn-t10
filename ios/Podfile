@@ -33,4 +33,6 @@ target 't10' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
   
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
 end

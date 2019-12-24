@@ -1,23 +1,11 @@
 import React from 'react';
-import {AppRegistry,StyleSheet, Text, View} from 'react-native';
-import Icon from 'react-native-vector-icons/AntDesign';
+import {AppRegistry} from 'react-native';
+import {createAppContainer,createSwitchNavigator} from 'react-navigation';
+import {createStackNavigator} from "react-navigation-stack";
+import Home from './src/pages/Home';
+import Auth from './src/pages/Auth';
 
-const App = ({}) => {
-  return (
-    <View style={styles.container}>
-      <Icon name='meh' size={30} />
-      <Text>Chang..Yo12</Text>
-    </View>
-  )
-}
+const Main = createStackNavigator({Home});
+const App = createSwitchNavigator({Auth,Main});
 
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    justifyContent:'center',
-    alignItems:'center'
-  }
-})
-
-AppRegistry.registerComponent('t10', () => App);
-
+AppRegistry.registerComponent('t10', () => createAppContainer(App));
