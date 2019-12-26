@@ -31,8 +31,10 @@ target 't10' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
-  
+
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
   pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
 end

@@ -1,12 +1,11 @@
 import React from 'react';
 import {AppRegistry} from 'react-native';
-import {createAppContainer,createSwitchNavigator} from 'react-navigation';
-import {createStackNavigator} from "react-navigation-stack";
-import Home from './src/pages/Home';
-import Auth from './src/pages/Auth';
+import App from './src/navigator/Nav';
 import {Provider} from "./src/data/context";
+import {setNavigator} from './src/NavRef';
 
-const Main = createStackNavigator({Home});
-const App = createAppContainer(createSwitchNavigator({Auth,Main}));
-
-AppRegistry.registerComponent('t10', () => () => <Provider><App /></Provider>);
+AppRegistry.registerComponent('t10', () => () => {
+	return (
+		<Provider><App ref={navigator=>setNavigator(navigator)} /></Provider>
+	)
+});

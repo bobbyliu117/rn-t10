@@ -6,8 +6,10 @@ const styles = StyleSheet.create({
 		justifyContent:'center',
 		alignItems:'center'
 	},
-	bgBlue: {
-		backgroundColor: '#40e980'
+	authContainer: {
+		flex:1,
+		justifyContent: 'center',
+		marginBottom: 200
 	}
 });
 

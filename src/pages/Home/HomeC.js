@@ -1,13 +1,12 @@
 import React from 'react';
 import {Text, View} from "react-native";
-import styles from "../styles";
-import Icon from "react-native-vector-icons/AntDesign";
+import {SafeAreaView} from 'react-navigation';
 
 const Page = () => {
 	return (
-		<View style={styles.container}>
-			<Text>HomeC</Text>
-		</View>
+		<SafeAreaView>
+			<Text>HomeCC</Text>
+		</SafeAreaView>
 	)
 };
 
